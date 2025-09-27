@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Perusahaan Contoh - Beranda</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="logo">Tilashop.id</div>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="profile.html">Profil Kami</a>
+        <a href="#products">Produk Kami</a>
+        <a href="#contact">Message Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Banner -->
+    <section class="banner">
+      <div class="banner-overlay">
+        <h1 id="greeting">Hi, Selamat Datang di Tilashop</h1>
+        <p class="sub">Ini adalah website resmi dari Tilashop</p>
+      </div>
+    </section>
+
+    <!-- About & Vision -->
+    <section class="about">
+      <div class="container">
+        <article class="about-left">
+          <h2>Tentang Perusahaan</h2>
+          <p>
+            PT Tilashop adalah perusahaan yang bergerak di bidang penjualan aksesoris handphone. 
+            Kami menyediakan berbagai produk seperti charger Type-C, kepala charger, kabel Type-C, serta aksesoris umum lainnya. Fokus utama kami adalah menyediakan aksesoris premium untuk perangkat iPhone, termasuk case MagSafe, AirPods, dan produk pelengkap lainnya. 
+            Dengan kualitas terjamin dan harga yang kompetitif, kami berkomitmen memberikan pengalaman terbaik bagi setiap pelanggan.
+          </p>
+
+          <h3>Visi</h3>
+          <p>Menjadi penyedia aksesoris handphone terpercaya di Indonesia dengan mengutamakan kualitas, inovasi, dan kepuasan pelanggan.</p>
+
+          <h3>Misi</h3>
+          <ul>
+            <li>Menyediakan aksesoris handphone berkualitas tinggi dengan harga terjangkau.</li>
+            <li>Fokus pada kebutuhan pengguna iPhone melalui produk original dan kompatibel.</li>
+            <li>Memberikan layanan pelanggan yang ramah, cepat, dan profesional.</li>
+            <li>Terus mengikuti tren teknologi terbaru untuk menghadirkan produk yang relevan.</li>
+          </ul>
+        </article>
+
+        <aside class="about-right">
+          <h3>Fakta Singkat</h3>
+          <ul>
+            <li>Lokasi : Jakarta Barat</li>
+            <li>Tahun berdiri : 2025</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    
+   
+<!-- Produk Kami -->
+<section id="products" class="products">
+  <div class="container">
+    <h2>Produk Kami</h2>
+    <p class="muted">Berbagai aksesoris HP berkualitas dari Tilashop</p>
+    <div class="cards">
+      
+      <div class="card">
+        <img src="img/charger.jpg" alt="Charger & Kabel">
+        <h3>Charger & Kabel</h3>
+        <p>Charger Type-C, kepala charger, dan kabel Type-C berkualitas tinggi untuk berbagai perangkat.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/case-magsafe.jpg" alt="Case iPhone MagSafe">
+        <h3>Case iPhone (MagSafe)</h3>
+        <p>Case stylish dengan dukungan MagSafe yang melindungi sekaligus menambah gaya iPhone Anda.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/airpods.jpg" alt="AirPods & Aksesoris Audio">
+        <h3>AirPods & Aksesoris Audio</h3>
+        <p>AirPods, earphone, serta aksesoris audio pendukung untuk pengalaman suara terbaik.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/aksesoris.jpg" alt="Aksesoris Umum">
+        <h3>Aksesoris Umum</h3>
+        <p>Berbagai aksesoris HP lain seperti holder, kabel data tambahan, dan pelindung layar.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact / Message Us -->
+    <section id="contact" class="contact">
+      <div class="container contact-grid">
+        <div class="contact-form">
+          <h2>Message Us</h2>
+          <form id="contactForm" novalidate>
+            <label for="name">Nama</label>
+            <input id="name" name="name" type="text" placeholder="Nama lengkap" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="email@contoh.com" />
+
+            <label for="phone">Nomor Telepon</label>
+            <input id="phone" name="phone" type="tel" placeholder="081234567890" />
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan..."></textarea>
+
+            <div class="form-actions">
+              <button type="submit" id="submitBtn">Submit</button>
+            </div>
+            <div id="formErrors" class="errors" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <div class="contact-preview">
+          <h3>Preview Submission</h3>
+          <div id="previewBox" class="preview-box">
+            <p class="muted">Belum ada data dikirim.</p>
+          </div>
+
+          <div class="note">
+            <small>Nama yang tampil di beranda diambil dari input sebelumnya (disimpan di browser).</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Created By Anda Reza Kurniawan &copy; <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

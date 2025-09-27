@@ -1,0 +1,104 @@
+/* Reset kecil & variabel */
+:root{
+  --accent: #f7c844;
+  --dark: #222;
+  --muted: #6b6b6b;
+  --max-width: 1100px;
+  --gap: 20px;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  color: var(--dark);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 16px}
+
+/* Header */
+.site-header{border-bottom:1px solid #ddd;background:#fff}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 16px}
+.logo{background:var(--accent);color:#111;padding:8px 14px;border-radius:8px;font-weight:700}
+.nav a{margin-left:12px;padding:8px 12px;border-radius:6px;text-decoration:none;color:var(--dark);border:1px solid transparent}
+.nav a.active, .nav a:hover{border-color:#ccc;background:#fff}
+
+/* Banner */
+.banner{height:360px;background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.15)), url('https://picsum.photos/1400/600?blur=2');background-size:cover;background-position:center;display:flex;align-items:center}
+.banner-overlay{color:#fff;padding-left:40px}
+.banner h1{font-size:28px;margin:0 0 6px}
+.banner .sub{opacity:0.9}
+
+/* About section */
+.about{padding:36px 0;border-top:1px solid #eee;border-bottom:1px solid #eee;background:#fafafa}
+.about-left{flex:2}
+.about-right{flex:1;padding-left:24px}
+.about .container{display:flex;gap:24px;align-items:flex-start}
+
+.products {
+  padding: 28px 0;
+}
+.products .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+}
+.products .card {
+  flex: 1 1 calc(50% - 16px);
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+}
+.products .card h3 {
+  margin-top: 0;
+}
+@media (max-width: 700px){
+  .products .card { flex: 1 1 100%; }
+}
+
+.products .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Contact section */
+.contact{padding:28px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:start}
+.contact-form{background:#fff;padding:18px;border-radius:8px;border:1px solid #eee}
+.contact-form label{display:block;font-size:13px;margin-top:12px}
+.contact-form input, .contact-form textarea{width:100%;padding:8px;margin-top:6px;border:1px solid #ccc;border-radius:6px}
+.form-actions{margin-top:12px}
+button#submitBtn{background:var(--accent);border:0;padding:10px 18px;border-radius:6px;cursor:pointer}
+
+.contact-preview{background:#fff;border-radius:8px;padding:16px;border:1px solid #eee}
+.preview-box{min-height:160px;border:1px solid #f0f0f0;padding:12px;border-radius:6px;background:#fafafa}
+.muted{color:var(--muted)}
+
+/* Footer */
+.site-footer{border-top:1px solid #eee;padding:12px 0;text-align:center;font-size:13px;color:var(--muted)}
+
+/* Profile page */
+.profile-hero{padding:40px 0;background:linear-gradient(90deg,#fff,#fff)}
+.profile-hero .lead{color:var(--muted)}
+.profile-content{padding:24px 0}
+.org-grid{display:flex;gap:12px;margin-top:12px}
+.org-card{flex:1;border:1px solid #eee;padding:12px;border-radius:6px;text-align:center}
+
+/* Errors */
+.errors{color:#b00020;margin-top:8px;font-size:13px}
+
+/* Responsive */
+@media (max-width:900px){
+  .banner{height:220px}
+  .banner-overlay{padding-left:18px}
+  .about .container{flex-direction:column}
+  .contact-grid{grid-template-columns:1fr; }
+  .contact-preview{order:2}
+  .contact-form{order:1}
+  .cards{flex-direction:column}
+  .org-grid{flex-direction:column}
+}
